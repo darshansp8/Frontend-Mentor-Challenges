@@ -5,22 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link rel="stylesheet" href="styles.css">
 	
 	<title>Frontend Mentor | Results summary component</title>
 
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-	<style>
-		.attribution { font-size: 11px; text-align: center; }
-		.attribution a { color: hsl(228, 45%, 44%); }
-	</style>
+
 </head>
 <body>
 	<div class="result--container">
 		<div class="result--score">
 			
-			<h3 class="section--title section--title__light">
+			<h4 class="section--title section--title__light">
 				Your Result
-			</h3>
+			</h4>
 			
 			<div class="score--marks">
 				<h1 class="score--obtained">
@@ -35,10 +33,9 @@
 				<h4 class="score--title">
 					Great
 				</h4>
-			</div>
-		
-			<div class="score--message">
-				You scored higher than 65% of the people who have taken these tests.
+				<div class="score--message">
+					You scored higher than 65% of the people who have taken these tests.
+				</div>
 			</div>
 			
 		</div>
@@ -47,52 +44,55 @@
 			<h3 class="section--title section--title__dark">
 				Summary
 			</h3>
-			
-			<div class="summary">
-				<div class="summary--icon">
 
-				</div>
-				<div class="summary--text">
-					Reaction
-				</div>
-				<div class="summary--marks">
-					80 / 100
-				</div>
-			</div>
+			<div class="summary--container">
+				<div class="summary summary--reaction">
+					<div class="summary--info">
+						<img src="./assets/images/icon-reaction.svg" alt="Reaction">
 
-			<div class="summary">
-				<div class="summary--icon">
-
+						<div class="summary--text summary--text__red">
+							Reaction
+						</div>
+					</div>
+					<div class="summary--marks">
+						80 <span class="text--light">/ 100</span>
+					</div>
 				</div>
-				<div class="summary--text">
-					Memory
+	
+				<div class="summary summary--memory">
+					<div class="summary--info">
+						<img src="./assets/images/icon-memory.svg" alt="Memory">
+						<div class="summary--text summary--text__yellow">
+							Memory
+						</div>
+					</div>
+					<div class="summary--marks">
+						92 <span class="text--light">/ 100</span>
+					</div>
 				</div>
-				<div class="summary--marks">
-					92 / 100
+	
+				<div class="summary summary--verbal">
+					<div class="summary--info">
+						<img src="./assets/images/icon-verbal.svg" alt="Verbal">				
+						<div class="summary--text summary--text__green">
+							Verbal
+						</div>
+					</div>
+					<div class="summary--marks">
+						61 <span class="text--light">/ 100</span>
+					</div>
 				</div>
-			</div>
-
-			<div class="summary">
-				<div class="summary--icon">
-
-				</div>
-				<div class="summary--text">
-					Verbal
-				</div>
-				<div class="summary--marks">
-					61 / 100
-				</div>
-			</div>
-
-			<div class="summary">
-				<div class="summary--icon">
-
-				</div>
-				<div class="summary--text">
-					Visual
-				</div>
-				<div class="summary--marks">
-					72 / 100
+	
+				<div class="summary summary--visual">
+					<div class="summary--info">
+							<img src="./assets/images/icon-visual.svg" alt="Visual">
+						<div class="summary--text summary--text__blue">
+							Visual
+						</div>
+					</div>
+					<div class="summary--marks">
+						72 <span class="text--light">/ 100</span>
+					</div>
 				</div>
 			</div>
 			
@@ -106,7 +106,7 @@
 	
 	<div class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-		Coded by <a href="#">Your Name Here</a>.
+		Coded by <a href="#">Darshan</a>.
 	</div>
 </body>
 </html>

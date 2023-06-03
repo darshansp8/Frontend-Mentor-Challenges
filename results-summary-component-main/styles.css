@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --slate-blue_light: hsl(252, 100%, 67%);
+    --royal-blue_light: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+
+    --white: hsl(0, 0%, 100%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.result--container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 20px;
+    box-shadow: 0 3rem 10rem -3rem var(--dark-gray-blue);
+}
+
+.result--score{
+    position: relative;
+    color: var(--white);
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    align-content: space-around;
+    justify-items: center;
+    grid-row-gap: 1.5rem;
+    row-gap: 1.5rem;
+    background-image: linear-gradient(to bottom, var(--slate-blue_light), var(--royal-blue_light));
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+}
+
+.section--title{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .8px;
+}
+
+.section--title__light{
+    color: var(--white);
+    opacity: .7;
+}
+
+.section--title__dark{
+    color: var(--dark-gray-blue);
+}
+
+.score--marks{
+    height: 150px;
+    width: 150px;
+    padding: 2rem;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    display: grid;
+    grid-template-rows: max-content max-content;
+    justify-items: center;
+}
+
+.score--obtained{
+    font-size: 3rem;
+    /* line-height: 3rem; */
+}
+
+.score--outof{
+    font-size: .8rem;
+    color: hsla(0, 0%, 100%, .5);
+}
+
+.score--performance{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    grid-row-gap: .5rem;
+    row-gap: .5rem;
+}
+
+.score--title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: var(--white);
+}
+
+.score--message{
+    width: 25ch;
+    font-size: .8rem;
+    color: var(--white);
+    opacity: .5;
+    text-align: center;
+}
+
+.result--summary{
+    padding: 1.5rem 2.5rem;
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    grid-row-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.summary{
+    padding: .7rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: .4rem;
+    font-size: .7rem;
+}
+
+.summary--reaction{
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.summary--memory{
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.summary--verbal{
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.summary--visual{
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.summary--info{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-column-gap: .2rem;
+    column-gap: .2rem;
+}
+
+.summary--text__red{
+    color: var(--light-red);
+}
+
+.summary--text__yellow{
+    color: var(--orangey-yellow);
+}
+
+.summary--text__green{
+    color: var(--green-teal);
+}
+
+.summary--text__blue{
+    color: var(--cobalt-blue);
+}
+
+.summary--marks{
+    grid-column-start: 3;
+    color: var(--dark-gray-blue);
+}
+
+.text--light{
+    color: var(--dark-gray-blue);
+    opacity: .5;
+}
+
+
+.primary{
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    letter-spacing: .9px;
+    font-weight: 700;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
