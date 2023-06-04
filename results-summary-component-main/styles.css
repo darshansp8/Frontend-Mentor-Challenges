@@ -207,7 +207,7 @@ body{
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media(max-width: 375px) {
+@media(max-width: 480px) {
     .result--container{
         position: relative;
         top: 0;
@@ -238,6 +238,7 @@ body{
     .result--summary{
         grid-row-gap: 1rem;
         row-gap: 1rem;
+        padding: 1rem 2rem;
     }
 
     .summary{
